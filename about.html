@@ -14,101 +14,55 @@
     <!-- Full-width Navbar -->
     <nav class="navbar sticky-top bg-primary bg-gradient bg-opacity-50 w-100">
         <div class="d-flex w-100 justify-content-start me-3">
-          <button class="btn btn-primary ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-            <i class="fas fa-bars"></i> 
-          </button>
+            <button class="btn btn-primary ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <i class="fas fa-bars"></i> 
+            </button>
         </div>
-      </nav>
-      
+    </nav>
+    
     <!-- Sidebar -->
     <div class="offcanvas offcanvas-start bg-black" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header bg-primary bg-gradient bg-opacity-75">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body bg-danger bg-black ">
-          <div class="mt-4 d-flex flex-column justify-content-center align-items-center" style="width: 100%;">
-            <a href="index.html" 
-            style="background-color: black; 
-                   color: white; 
-                   border: 2px solid white; 
-                   text-decoration: none; 
-                   display: block; 
-                   width: 100%; 
-                   text-align: center; 
-                   padding: 0.5rem; 
-                   margin-bottom: 0.5rem;">
-            Home
-         </a>
-         <a href="about.html" 
-         style="background-color: black; 
-                color: white; 
-                border: 2px solid white; 
-                text-decoration: none; 
-                display: block; 
-                width: 100%; 
-                text-align: center; 
-                padding: 0.5rem; 
-                margin-bottom: 0.5rem;">
-         About Me 
-      </a>
-      <a href="resume.html" 
-      style="background-color: black; 
-             color: white; 
-             border: 2px solid white; 
-             text-decoration: none; 
-             display: block; 
-             width: 100%; 
-             text-align: center; 
-             padding: 0.5rem; 
-             margin-bottom: 0.5rem;">
-      Resume
-   </a>
-   <a href="portfolio.html" 
-   style="background-color: black; 
-          color: white; 
-          border: 2px solid white; 
-          text-decoration: none; 
-          display: block; 
-          width: 100%; 
-          text-align: center; 
-          padding: 0.5rem; 
-          margin-bottom: 0.5rem;">
-   Portfolio
-  </a>
-  <a href="contact.html" 
-  style="background-color: black; 
-         color: white; 
-         border: 2px solid white; 
-         text-decoration: none; 
-         display: block; 
-         width: 100%; 
-         text-align: center; 
-         padding: 0.5rem; 
-         margin-bottom: 0.5rem;">
-  Contacts
-  </a>
-          </div>
+        <div class="offcanvas-body bg-danger bg-black">
+            <div class="mt-4 d-flex flex-column justify-content-center align-items-center" style="width: 100%;">
+                <a href="index.html" class="btn btn-outline-light w-100 mb-2">Home</a>
+                <a href="about.html" class="btn btn-outline-light w-100 mb-2">About Me</a>
+                <a href="resume.html" class="btn btn-outline-light w-100 mb-2">Resume</a>
+                <a href="portfolio.html" class="btn btn-outline-light w-100 mb-2">Portfolio</a>
+                <a href="contact.html" class="btn btn-outline-light w-100 mb-2">Contacts</a>
+            </div>
         </div>
-      </div>
-
-   <div class="container mt-3" style="width:80%; height: 650px;" >
-    <div class="text-white mt-4 mb-3 d-flex justify-content-center">
-        <p class="h1">About Me</p>
-    </div>
-    
-    <!-- Responsive container with Tailwind CSS -->
-    <div class="container d-flex flex-col md:flex-row justify-content-evenly">
-      <div class="container border border-white text-white m-1 rounded">
-        <p class="h5 mt-4 ms-4 me-3">Hi, I'm Regie A. Igay, a dedicated web developer with a passion for creating innovative and user-friendly websites. I specialize in turning ideas into functional, beautifully designed web experiences. I love the process of crafting clean, modern code that helps businesses succeed online.</p>
-      </div>
-      <div class="container m-1">
-        <img src="pp.png" class="w-full md:w-auto">
-      </div>
-      <div class="container border border-white text-white m-1 rounded">
-        <p class="h5 mt-4 ms-4 me-3">I prioritize clear and consistent communication with my clients to ensure their vision is fully realized. Collaboration is key for me, and I work closely with clients to deliver high-quality results. I focus on creating websites that not only look great but also function seamlessly on all devices.</p>
-      </div>
     </div>
 
-   </div>
+    <div class="container mt-3" style="width: 80%; height: 650px;">
+        <div class="text-white mt-4 mb-3 text-center">
+            <p class="h1">About Me</p>
+        </div>
+        
+        <!-- First Row: Two Containers -->
+        <div class="row mb-3 align-items-stretch">  <!-- Added align-items-stretch -->
+            <div class="col-md-6">
+                <div class="container border border-white text-white m-1 rounded h-100"> <!-- Added h-100 -->
+                    <p class="h5 mt-4 ms-4 me-3">Hi, I'm Regie A. Igay, a dedicated web developer with a passion for creating innovative and user-friendly websites. I specialize in turning ideas into functional, beautifully designed web experiences. I love the process of crafting clean, modern code that helps businesses succeed online.</p>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center"> <!-- Added d-flex and align-items-center -->
+                <div class="container m-1 h-100"> <!-- Added h-100 -->
+                    <img src="pp.png" class="w-100 h-100 object-cover rounded" alt="Profile Picture"> <!-- Added h-100 and object-cover -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row: One Container -->
+        <div class="row">
+            <div class="col">
+                <div class="container border border-white text-white m-1 rounded">
+                    <p class="h5 mt-4 ms-4 me-3">I prioritize clear and consistent communication with my clients to ensure their vision is fully realized. Collaboration is key for me, and I work closely with clients to deliver high-quality results. I focus on creating websites that not only look great but also function seamlessly on all devices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
