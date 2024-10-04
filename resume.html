@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="about-body">
+    <!-- Full-width Navbar -->
+    <nav class="navbar sticky-top bg-primary bg-gradient bg-opacity-50 w-100">
+        <div class="d-flex w-100 justify-content-start me-3">
+          <button class="btn btn-primary ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <i class="fas fa-bars"></i> 
+          </button>
+        </div>
+    </nav>
+    
+    <!-- Sidebar -->
+    <div class="offcanvas offcanvas-start bg-black" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header bg-primary bg-gradient bg-opacity-75">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-danger bg-black">
+          <div class="mt-4 d-flex flex-column justify-content-center align-items-center" style="width: 100%;">
+            <a href="index.html" class="bg-black text-white border-2 border-white text-center py-2 mb-2 block w-full">Home</a>
+            <a href="about.html" class="bg-black text-white border-2 border-white text-center py-2 mb-2 block w-full">About Me</a>
+            <a href="resume.html" class="bg-black text-white border-2 border-white text-center py-2 mb-2 block w-full">Resume</a>
+            <a href="portfolio.html" class="bg-black text-white border-2 border-white text-center py-2 mb-2 block w-full">Portfolio</a>
+            <a href="contact.html" class="bg-black text-white border-2 border-white text-center py-2 mb-2 block w-full">Contacts</a>
+          </div>
+        </div>
+    </div>
+
+   <div class="container mt-3">
+    <div class="text-white mt-4 mb-3 d-flex justify-content-center">
+        <p class="h1">Resume</p>
+    </div>
+
+    <!-- Responsive Resume Section -->
+    <div class="flex flex-col md:flex-row justify-evenly">
+      <div class="border border-white text-white m-1 rounded p-4 flex-1">
+        <p class="h4">Skills</p>
+        <ul class="mt-3">
+            <li>Front-End:</li>
+            <span class="text-indigo-300">HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, React</span>
+            <li class="mt-3">Back-End:</li>
+            <span class="text-indigo-300">Node.js, MySQL, PHP, C# .NET, SQL SERVER</span>
+            <li class="mt-3">Microsoft Office:</li>
+            <span class="text-indigo-300">PowerPoint, Word, Excel</span>
+        </ul>
+      </div>
+      <div class="border border-white text-white m-1 rounded p-4 flex-1">
+        <p class="h4">Work Experience</p>
+        <ul class="mt-3">
+            <li>Position:</li>
+            <span class="text-indigo-300">Junior Programmer Intern</span>
+            <li class="mt-3">Company Name:</li>
+            <span class="text-indigo-300">Cbtyes Computer Programming Services</span>
+            <li class="mt-3">Dates of Employment:</li>
+            <span class="text-indigo-300">September 2023 to December 2023</span>
+            <li class="mt-3">Brief Description:</li>
+            <span class="text-indigo-300">Developed and implemented forms to help clients efficiently manage their data, while collaborating with the development team to ensure seamless integration with existing systems and adherence to client requirements.</span>  
+        </ul>
+      </div>
+      <div class="border border-white text-white m-1 rounded p-4 flex-1">
+        <p class="h4">Projects</p>
+        <ul class="mt-3">
+            <li>Project:</li>
+            <span class="text-indigo-300">CPSU Hinigaran Web Class Record</span>
+            <li class="mt-3">Technologies:</li>
+            <span class="text-indigo-300">PHP, JavaScript, HTML, CSS, MySQL</span>
+            <li class="mt-3">Description:</li>
+            <span class="text-indigo-300">Developed a web-based class record system for CPSU Hinigaran, utilizing PHP and MySQL for backend management, with a dynamic front-end built using JavaScript, HTML, and CSS.</span>
+        </ul>
+      </div>
+      <div class="border border-white text-white m-1 rounded p-4 flex-1">
+        <p class="h4">Education</p>
+        <ul class="mt-3">
+            <li>Institution:</li>
+            <span class="text-indigo-300">Central Philippine State University Hinigaran Campus</span>
+            <li class="mt-3">Degree:</li>
+            <span class="text-indigo-300">Bachelor of Science in Information Technology</span>
+            <li class="mt-3">Graduation Date:</li>
+            <span class="text-indigo-300">July 2024</span>
+        </ul>
+      </div>
+    </div>
+   </div>
+   
+</body>
+</html>
